@@ -71,7 +71,7 @@ This project was completed using the following tools and technologies:
 - **PostgreSQL** – Used for querying, data cleaning, and analysis of the sales funnel dataset  
 - **SQL** – Core language used to perform data exploration, aggregation, and business analysis  
 - **DBeaver** – Database management tools used to run and test SQL queries  
-- **Excel ** – Used for quick data validation and result checking  
+- **Excel** – Used for quick data validation and result checking  
 - **GitHub** – Used for version control and project documentation  
 
 ### Key Skills Applied
