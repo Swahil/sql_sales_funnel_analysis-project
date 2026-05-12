@@ -230,7 +230,7 @@ GROUP BY traffic_source;
 ```
 **Objective:**  Identify the traffic source which performs well in bringing in more revenue
 
-##Findings & Conclusions
+## Findings & Conclusions
 
 **1.UX & Website Optimization**
 
@@ -243,9 +243,9 @@ working perfectly.
 **2. Marketing Strategy**
 
 - **Stop Over-Investing in Social for Sales:** Social Media has the lowest conversion rate (Efficiency). We are likely paying for "window shoppers."
--  ** Action:** Shift budget away from "Traffic" objectives on social ads and focus on "Retargeting"
+-  **Action:** Shift budget away from "Traffic" objectives on social ads and focus on "Retargeting"
 or "Lead Generation" to capture emails instead.
--  ** Double Down on Email Marketing:** Email is our highest converting channel (~33% conversion
+-  **Double Down on Email Marketing:** Email is our highest converting channel (~33% conversion
 rate vs ~6% for Social media).
 
   **Action:** Implement an aggressive email capture popup for these high-volume Social visitors.
@@ -253,7 +253,7 @@ If we can get them onto our email list, our data proves they are far more likely
 
 **3. Financial & Revenue**
 
-- ** Audit Ad Spend against AOV:** We found our Average Order Value is ~$107.
+- **Audit Ad Spend against AOV:** We found our Average Order Value is ~$107.
 - 
 **Action:** Set a strict Customer Acquisition Cost (CAC) limit. If we are paying more than
 $30-$40 to acquire a customer via Social Media ads (which convert poorly), we are likely losing
