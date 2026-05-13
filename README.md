@@ -82,7 +82,7 @@ This project was completed using the following tools and technologies:
 
 - # The Analysis
 
-##1.Define the KPIs from the dataset
+## 1.Define the KPIs from the dataset
 
 ```sql
 WITH loreso_funnel AS (
@@ -254,7 +254,7 @@ If we can get them onto our email list, our data proves they are far more likely
 **3. Financial & Revenue**
 
 - **Audit Ad Spend against AOV:** We found our Average Order Value is ~$107.
-- 
+
 **Action:** Set a strict Customer Acquisition Cost (CAC) limit. If we are paying more than
 $30-$40 to acquire a customer via Social Media ads (which convert poorly), we are likely losing
 money on those specific transactions.
