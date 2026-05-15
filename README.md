@@ -245,6 +245,7 @@ WHERE  event_date::DATE >= DATE '2026-02-03' - INTERVAL '30 days'
 AND event_type = 'purchase'
 GROUP BY traffic_source;
 ```
+![visualization](Dashboard/revenue_by_trafficsource.png)
 ## SQL Techniques Used
 
 - CTEs
@@ -282,10 +283,9 @@ working perfectly.
 **2. Marketing Strategy**
 
 - **Stop Over-Investing in Social for Sales:** Social Media has the lowest conversion rate (Efficiency). We are likely paying for "window shoppers."
--  **Action:** Shift budget away from "Traffic" objectives on social ads and focus on "Retargeting"
-or "Lead Generation" to capture emails instead.
+-  **Action:**. Increase investment in email automation flows, including welcome sequences, abandoned cart emails, and personalized product recommendations
 -  **Double Down on Email Marketing:** Email is our highest converting channel (~33% conversion
-rate vs ~6% for Social media).
+rate vs ~6% for Social media) making it our goal to expand reach and segmentation rather than just maintain it..
 
   **Action:** Implement an aggressive email_marketing bampaign to get leads for these high-volume Social visitors.
 If we can get them onto our email list, our data proves they are far more likely to buy later.
