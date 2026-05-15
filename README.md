@@ -11,13 +11,14 @@ This analysis is crucial for various departments in the company, including:
 This comprehensive understanding supports data-driven decision-making across teams to optimize overall business performance.
 
 ## Objectives
+
 The key objectives are:
 
-1.Identify the marketing channel with the highest conversion rate.
-2.Identify the marketing channel generating the highest traffic.	
-3.Identify the marketing channel generating the highest revenue.
-4.Determine where visitors drop off in the sales funnel.
-5.Analyze the time taken for users to convert.
+1. Identify the marketing channel with the highest conversion rate.
+2. Identify the marketing channel generating the highest traffic.	
+3. Identify the marketing channel generating the highest revenue.
+4. Determine where visitors drop off in the sales funnel.
+5. Analyze the time taken for users to convert.
    
 ## Dataset
 
@@ -27,13 +28,13 @@ This project utilizes data tracking customer interactions with our e-commerce pl
 
 The dataset consists of the following key columns:
 
-- **event_id**: Unique identifier for each user event recorded in the system  
-- **user_id**: Identifier for each user interacting with the platform  
-- **event_type**: Type of user action representing different funnel stages (e.g., view, add_to_cart, checkout, purchase)  
-- **event_date**: Timestamp indicating when the event occurred  
-- **product_id**: Identifier for the product involved in the event  
-- **amount**: Monetary value associated with purchase events (where applicable)  
-- **traffic_source**: Channel through which the user arrived (e.g., organic, paid ads, social media)
+- **event_id**: - Unique identifier for each user event recorded in the system  
+- **user_id**: - Identifier for each user interacting with the platform  
+- **event_type**: - Type of user action representing different funnel stages (e.g., view, add_to_cart, checkout, purchase)  
+- **event_date**: - Timestamp indicating when the event occurred  
+- **product_id**: - Identifier the product involved in the event  
+- **amount**: - Monetary value associated with purchase events (where applicable)  
+- **traffic_source**: - Marketing Channel through which the user arrived to our platform (e.g., organic, paid ads, social media)
 
 ###  Dataset Purpose
 
@@ -73,19 +74,29 @@ SELECT * FROM user_events;
 
 This project was completed using the following tools and technologies:
 
-- **PostgreSQL** – Used for querying, data cleaning, and analysis of the sales funnel dataset  
-- **SQL** – Core language used to perform data exploration, aggregation, and business analysis  
+- **PostgreSQL** – Used for querying, data cleaning, and analysis of the sales funnel dataset    
 - **DBeaver** – Database management tools used to run and test SQL queries  
-- **Excel** – Used for quick data validation and result checking  
+- **Excel** – Used for quick data validation and result checking
+- **PowerBI** - used for visualization of our result analysis
 - **GitHub** – Used for version control and project documentation  
 
-### Key Skills Applied
-- Data cleaning using SQL  
-- Funnel analysis and customer journey tracking  
-- Conversion rate and KPI calculation  
-- Revenue and traffic source analysis
+## Methodology
 
-- # The Analysis
+1. Data Cleaning and Validation
+2. Funnel Stage Identification
+3. Conversion Rate Analysis
+4. Traffic Source Performance Analysis
+5. Revenue Analysis
+6. Business Recommendations
+
+## Key Questions Answered
+
+- What is the overall funnel conversion rate?
+- Which traffic source converts best?
+- Where do most users drop off?
+- Which channel generates the most revenue?
+- How long does conversion take?
+
 
 ## 1.Define the KPIs from the dataset
 
@@ -128,9 +139,9 @@ SELECT
 	FROM user_events
 	WHERE  event_date::DATE >= DATE '2026-02-03' - INTERVAL '30 days';
 ```
- **Objective:**  Identify the number of customers from the initial stage of view through the entire funnel up to purchase.
+ **Objective:**  Identify the number of customers through the entire sales funnel.
 
-  ## 3.Find the rate which the customers transitioned from one stage to the other
+  ## 3.What is the overall funnel conversion rate &  Where do most users drop off?
   
 ```sql
 WITH funnel_stages AS (
@@ -159,7 +170,7 @@ FROM funnel_stages;
 ```
 **Objective:**  Identify the stage where most of the customers drop off in our sales funnel
 
-## 4.Defining the funnel by categorizing it in traffic source
+## 4.Which traffic source converts best?
 
 ```sql
 WITH funnel_by_traffic_source AS (
@@ -185,9 +196,9 @@ SELECT
 	ROUND(stage_5_purchase*100/stage_1_views,2) AS views_purchase_tsRATE
 FROM funnel_by_traffic_source;
 ```
-**Objective:**  Identify which traffic source seems to do well by bringing us the most customers
+**Objective:**  Identify which traffic source that performs well in terms of driving traffic.
 
-  ## 5. Find the average time taken for each event type & conversion rate time
+  ## 5. How long does conversion take?
 
 ```sql
 --we had to change the data type of event_date from text to timestamp for us to query
@@ -216,7 +227,7 @@ FROM time_taken;
 ```
 **Objective:**  Getting to know the time it takes to transition from one event type to the other so that we can optimize the platform to create a smooth experience
 
-## 6. Find the amount of revenue brought in by each traffic source
+## 6. Which channel generates the most revenue?
 
 ```sql
 SELECT 
@@ -233,14 +244,36 @@ WHERE  event_date::DATE >= DATE '2026-02-03' - INTERVAL '30 days'
 AND event_type = 'purchase'
 GROUP BY traffic_source;
 ```
+## SQL Techniques Used
+
+- CTEs
+- Window Functions
+- Aggregate Functions
+- CASE Statements
+- Date Functions
+
 **Objective:**  Identify the traffic source which performs well in bringing in more revenue
 
-## Findings & Conclusions
+## Dashboard Preview
+
+Then add images:
+![visualization](dashboard.png)
+
+## Key Insights
+
+- Email marketing had the highest conversion rate of 33% & socials the least with 6%.
+- Social media generated the 2nd highest traffic but the least conversions of 1261 visitors & 6% respectively.
+- Most users dropped off during product view stages as they transitioned to cart stage from 4291 t0 1338 customers.
+- Organic as a marketing channel generated the highest revenue of ksh 32709.412 making it the most profitable
+- socials took the highest time to convert (6 minutes = 396 sec) from view to purchase
+- The conversion_rate between check_out to purchase was the best with a score of above 75%.
+
+##  Recomendations
 
 **1.UX & Website Optimization**
 
 - **Don't Touch the Checkout Flow:** The conversion rates from Checkout Start to $ Purchase
-are excellent (~80%+). This indicates the technical payment flow is frictionless.
+are excellent (~75%+). This indicates the technical payment flow is frictionless.
 
 **Action:** Do not redesign the checkout page right now; you risk breaking something that is
 working perfectly.
@@ -253,7 +286,7 @@ or "Lead Generation" to capture emails instead.
 -  **Double Down on Email Marketing:** Email is our highest converting channel (~33% conversion
 rate vs ~6% for Social media).
 
-  **Action:** Implement an aggressive email capture popup for these high-volume Social visitors.
+  **Action:** Implement an aggressive email_marketing bampaign to get leads for these high-volume Social visitors.
 If we can get them onto our email list, our data proves they are far more likely to buy later.
 
 **3. Financial & Revenue**
