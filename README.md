@@ -195,7 +195,7 @@ SELECT
 	ROUND(stage_5_purchase*100/stage_1_views,2) AS views_purchase_tsRATE
 FROM funnel_by_traffic_source;
 ```
-![visualization](Dashboard/conversion_rate by traffic_source.png)
+
 **Objective:**  Identify which traffic source that performs well in terms of driving traffic.
 
   ## 5. How long does conversion take?
