@@ -256,11 +256,6 @@ GROUP BY traffic_source;
 
 **Objective:**  Identify the traffic source which performs well in bringing in more revenue
 
-## Dashboard Preview
-
-Then add images:
-![visualization](dashboard.png)
-
 ## Key Insights
 
 - Email marketing had the highest conversion rate of 33% & socials the least with 6%.
