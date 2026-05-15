@@ -245,7 +245,7 @@ WHERE  event_date::DATE >= DATE '2026-02-03' - INTERVAL '30 days'
 AND event_type = 'purchase'
 GROUP BY traffic_source;
 ```
-![visualization](Dashboard/revenue_by_trafficsource.png)
+![visualization]()
 ## SQL Techniques Used
 
 - CTEs
