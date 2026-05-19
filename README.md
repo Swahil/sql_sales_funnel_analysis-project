@@ -195,7 +195,6 @@ SELECT
 	ROUND(stage_5_purchase*100/stage_1_views,2) AS views_purchase_tsRATE
 FROM funnel_by_traffic_source;
 ```
-![visualisation](Dashboard/conversion_rate_by_traffic_source.png)
 
 **Objective:**  Identify which traffic source that performs well in terms of driving traffic.
 
@@ -245,7 +244,10 @@ WHERE  event_date::DATE >= DATE '2026-02-03' - INTERVAL '30 days'
 AND event_type = 'purchase'
 GROUP BY traffic_source;
 ```
-![visualization](Dashboard/total_revenue_by_trafficsource.png)
+## Dashboard Preview
+
+![visualization](Dashboard/user_events.png)
+
 ## SQL Techniques Used
 
 - CTEs
