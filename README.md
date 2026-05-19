@@ -244,9 +244,6 @@ WHERE  event_date::DATE >= DATE '2026-02-03' - INTERVAL '30 days'
 AND event_type = 'purchase'
 GROUP BY traffic_source;
 ```
-## Dashboard Preview
-
-![visualization](Dashboard/user_events.png)
 
 ## SQL Techniques Used
 
@@ -257,6 +254,10 @@ GROUP BY traffic_source;
 - Date Functions
 
 **Objective:**  Identify the traffic source which performs well in bringing in more revenue
+
+## Dashboard Preview
+
+![visualization](Dashboard/user_events.png)
 
 ## Key Insights
 
