@@ -5,7 +5,9 @@
 
 - [Overview](#overview)
 - [Objectives](#objectives)
-- [Dataset Information](#dataset)
+- [Dataset](#Dataset)
+- [Schema](#Schema)
+- [Tools Used](#Tools Used)
 - [Project Structure](#project-structure)
 - [Tools used](#Tools_Used)
 - [Methodology](##Methodology)
@@ -72,7 +74,7 @@ The dataset is designed to simulate a real-world e-commerce or digital sales env
 
 - **Dataset Link:** [user_events](https://docs.google.com/spreadsheets/d/1qq04-TKpxHvDxcodKvjDDm2m-qgftMvjdXkBGbltURk/edit?usp=sharing)
 
-## Schema
+# Schema
 
 ```sql
 DROP TABLE IF EXISTS user_events ;
@@ -89,7 +91,7 @@ CREATE TABLE user_events  (
 
 SELECT * FROM user_events;
 
-## Tools Used
+# Tools Used
 
 This project was completed using the following tools and technologies:
 
