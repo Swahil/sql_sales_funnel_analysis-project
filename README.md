@@ -290,7 +290,7 @@ GROUP BY traffic_source;
 
 **1.UX & Website Optimization**
 
-- **Don't Touch the Checkout Flow:** The conversion rates from Checkout Start to $ Purchase
+- **Don't Touch the Checkout Flow:** The conversion rates from Checkout to Purchase
 are excellent (~75%+). This indicates the technical payment flow is frictionless.
 
 **Action:** Do not redesign the checkout page right now; you risk breaking something that is
