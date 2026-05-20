@@ -1,7 +1,27 @@
 # sales_funnel_analysis-project 
 ## Analyzing sales funnel in an ecommerce platform through all the customer's journey in the platform
 
-## Overview
+## Table of Contents
+
+- [Overview](#overview)
+- [Objectives](#objectives)
+- [Dataset Information](#dataset)
+- [Project Structure](#project-structure)
+- [Tools used](#Tools_Used)
+- [Methodology](##Methodology)
+- [Key Questions Answered](##Key_Questions_Answered)
+- [SQL Techniques Used](#sql-techniques-used)
+- [Setup Instructions](#setup-instructions)
+- [Workflow](#workflow)
+- [Key Findings](#key-findings)
+- [Before vs After Cleaning](#before-vs-after-cleaning)
+- [Challenges Encountered](#challenges-encountered)
+- [Future Improvements](#future-improvements)
+- [Conclusion](#conclusion)
+- [Author](#author)
+- [License](#license)
+
+# Overview
 This project analyzes customers' journeys while interacting with our e-commerce platform to identify conversion rates, traffic sources, and revenue generators within our sales funnel. 
 This analysis is crucial for various departments in the company, including:
 - Marketing team: Enables them to assess the performance of their campaigns.
@@ -9,8 +29,7 @@ This analysis is crucial for various departments in the company, including:
 - IT department: Helps identify challenges encountered at each stage of the purchase process on the platform.
   
 This comprehensive understanding supports data-driven decision-making across teams to optimize overall business performance.
-
-## Objectives
+# Objectives
 
 The key objectives are:
 
@@ -20,11 +39,11 @@ The key objectives are:
 4. Determine where visitors drop off in the sales funnel.
 5. Analyze the time taken for users to convert.
    
-## Dataset
+# Dataset
 
 This project utilizes data tracking customer interactions with our e-commerce platform. The dataset captures user engagement from the initial interaction through to the final purchase, enabling a detailed analysis of conversion rates and revenue performance within our sales funnel.
 
-###  Table Structure
+##  Table Structure
 
 The dataset consists of the following key columns:
 
@@ -36,7 +55,7 @@ The dataset consists of the following key columns:
 - **amount**: - Monetary value associated with purchase events (where applicable)  
 - **traffic_source**: - Marketing Channel through which the user arrived to our platform (e.g., organic, paid ads, social media)
 
-###  Dataset Purpose
+##  Dataset Purpose
 
 The dataset is designed to simulate a real-world e-commerce or digital sales environment, allowing analysis of:
 
@@ -45,7 +64,7 @@ The dataset is designed to simulate a real-world e-commerce or digital sales env
 - Performance of different traffic acquisition channels  
 - Revenue contribution by user activity  
 
-###  Notes
+##  Notes
 
 - Not all events contain monetary values; only purchase-related events contribute to revenue.  
 - Users may appear multiple times across different event types, representing their movement through the funnel.  
