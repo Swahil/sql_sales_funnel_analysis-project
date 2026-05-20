@@ -1,27 +1,24 @@
 # sales_funnel_analysis-project 
 ## Analyzing sales funnel in an ecommerce platform through all the customer's journey in the platform
 
-## Table of Contents
+# Table of Contents
 
 - [Overview](#overview)
 - [Objectives](#objectives)
 - [Dataset](#Dataset)
 - [Schema](#Schema)
-- [Tools Used](#Tools Used)
+- [Tools_Used](#Tools_Used)
+- [Methodology](#Methodology)
+- [SQL_Techniques_Used](#SQL_Techniques_Used)
+- [Dashboard_Preview](#Dashboard_Preview)
 - [Project Structure](#project-structure)
-- [Tools used](#Tools_Used)
+- [Tools_used](#Tools_Used)
 - [Methodology](##Methodology)
-- [Key Questions Answered](##Key_Questions_Answered)
+- [Key_Questions_Answered](#Key_Questions_Answered)
 - [SQL Techniques Used](#sql-techniques-used)
-- [Setup Instructions](#setup-instructions)
-- [Workflow](#workflow)
-- [Key Findings](#key-findings)
-- [Before vs After Cleaning](#before-vs-after-cleaning)
-- [Challenges Encountered](#challenges-encountered)
-- [Future Improvements](#future-improvements)
-- [Conclusion](#conclusion)
-- [Author](#author)
-- [License](#license)
+- [Key_Insights](#Key_Insights)
+- [Recomendations](#Recomendations)
+- [Author](#Author)
 
 # Overview
 This project analyzes customers' journeys while interacting with our e-commerce platform to identify conversion rates, traffic sources, and revenue generators within our sales funnel. 
@@ -91,7 +88,7 @@ CREATE TABLE user_events  (
 
 SELECT * FROM user_events;
 
-# Tools Used
+# Tools_Used
 
 This project was completed using the following tools and technologies:
 
@@ -100,7 +97,7 @@ This project was completed using the following tools and technologies:
 - **Excel** – Used for quick data validation and result checking
 - **GitHub** – Used for version control and project documentation  
 
-## Methodology
+# Methodology
 
 1. Data Cleaning and Validation
 2. Funnel Stage Identification
@@ -109,7 +106,7 @@ This project was completed using the following tools and technologies:
 5. Revenue Analysis
 6. Business Recommendations
 
-## Key Questions Answered
+# Key_ Questions_Answered
 
 - What is the overall funnel conversion rate?
 - Which traffic source converts best?
@@ -266,7 +263,7 @@ AND event_type = 'purchase'
 GROUP BY traffic_source;
 ```
 
-## SQL Techniques Used
+# SQL_Techniques_Used
 
 - CTEs
 - Window Functions
@@ -276,11 +273,11 @@ GROUP BY traffic_source;
 
 **Objective:**  Identify the traffic source which performs well in bringing in more revenue
 
-## Dashboard Preview
+# Dashboard_Preview
 
 ![visualization](Dashboard/user_events.png)
 
-## Key Insights
+# Key_Insights
 
 - Email marketing had the highest conversion rate of 33% & socials the least with 6%.
 - Social media generated the 2nd highest traffic but the least conversions of 1261 visitors & 6% respectively.
@@ -289,7 +286,7 @@ GROUP BY traffic_source;
 - socials took the highest time to convert (6 minutes = 396 sec) from view to purchase
 - The conversion_rate between check_out to purchase was the best with a score of above 75%.
 
-##  Recomendations
+#  Recomendations
 
 **1.UX & Website Optimization**
 
@@ -317,7 +314,7 @@ If we can get them onto our email list, our data proves they are far more likely
 $30-$40 to acquire a customer via Social Media ads (which convert poorly), we are likely losing
 money on those specific transactions.
 
-## Author
+# Author
 
 Benjamin Njoroge Githua (Swahil)
 - GitHub - https://github.com/Swahil
