@@ -84,9 +84,8 @@ CREATE TABLE user_events  (
     amount NUMERIC,
     traffic_source VARCHAR(50)
 );
-```
-
 SELECT * FROM user_events;
+```
 
 # Tools_Used
 
