@@ -28,6 +28,7 @@ This analysis is crucial for various departments in the company, including:
 - IT department: Helps identify challenges encountered at each stage of the purchase process on the platform.
   
 This comprehensive understanding supports data-driven decision-making across teams to optimize overall business performance.
+
 # Objectives
 
 The key objectives are:
@@ -38,6 +39,7 @@ The key objectives are:
 4. Determine where visitors drop off in the sales funnel.
 5. Analyze the time taken for users to convert.
    
+
 # Dataset
 
 This project utilizes data tracking customer interactions with our e-commerce platform. The dataset captures user engagement from the initial interaction through to the final purchase, enabling a detailed analysis of conversion rates and revenue performance within our sales funnel.
