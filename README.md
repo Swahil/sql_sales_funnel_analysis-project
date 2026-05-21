@@ -275,7 +275,7 @@ GROUP BY traffic_source;
 
 # Dashboard_Preview
 
-![visualization](Dashboard/user_events.png)
+![visualization](Dashboard/user_events_screenshot.png)
 
 # Key_Insights
 
