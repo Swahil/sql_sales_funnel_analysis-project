@@ -69,9 +69,10 @@ The dataset is designed to simulate a real-world e-commerce or digital sales env
 
 - Not all events contain monetary values; only purchase-related events contribute to revenue.  
 - Users may appear multiple times across different event types, representing their movement through the funnel.  
-- Traffic source is used to evaluate marketing channel effectiveness.  
-
-- **Dataset Link:** [user_events](https://docs.google.com/spreadsheets/d/1qq04-TKpxHvDxcodKvjDDm2m-qgftMvjdXkBGbltURk/edit?usp=sharing)
+- Traffic source is used to evaluate marketing channel effectiveness.
+  
+##  Dataset
+**Dataset Link:** [user_events](https://docs.google.com/spreadsheets/d/1qq04-TKpxHvDxcodKvjDDm2m-qgftMvjdXkBGbltURk/edit?usp=sharing)
 
 # Schema
 
