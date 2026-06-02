@@ -316,10 +316,18 @@ If we can get them onto our email list, our data proves they are far more likely
 $30-$40 to acquire a customer via Social Media ads (which convert poorly), we are likely losing
 money on those specific transactions.
 
+
 # Author
 
-Benjamin Njoroge Githua (Swahil)
-- GitHub - https://github.com/Swahil
-- Email - benjaminnjoroge7@gmail.com
+**Benjamin Njoroge**
 
-  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github)](https://github.com/Swahil)
+
+Email: benjaminnjoroge7@gmail.com  
+
+---
+
+# License
+
+This project is licensed under the [MIT License](LICENSE).You are free to use, modify, and distribute this project with attribution.
